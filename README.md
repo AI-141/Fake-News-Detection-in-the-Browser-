@@ -109,12 +109,10 @@ The model conversion process follows these steps:
 2. Apply dynamic INT8 quantization to reduce the model size
 3. Save the model and tokenizer files to the appropriate directories
 
-The conversion process is handled by the `export_and_quantize.py` scripts. 
+The conversion process is handled by the `export_and_quantize.py` script.
 ```bash
-
- python  export_and_quantize.py
-
-```bash
+python export_and_quantize.py
+```
 
 ### Browser Integration
 
