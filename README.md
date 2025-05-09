@@ -82,7 +82,7 @@ Follow these steps to set up the environment and run the project:
     # Install Python dependencies
     pip install "transformers>=4.40" datasets evaluate accelerate "optimum[onnxruntime,gpu]" onnxruntime-web==1.17.0
 
-    ```bash
+    ```
 
 3. **run frontend:**
 ```bash
