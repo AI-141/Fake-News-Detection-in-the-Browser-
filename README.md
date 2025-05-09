@@ -74,7 +74,6 @@ test1/
 Follow these steps to set up the environment and run the project:
 
 1.  **Setup Backend (Python & Model):**
-    Open your terminal and run:
     ```bash
     # Create and activate Conda environment
     conda create -n fakenews python=3.10
@@ -83,10 +82,7 @@ Follow these steps to set up the environment and run the project:
     # Install Python dependencies
     pip install "transformers>=4.40" datasets evaluate accelerate "optimum[onnxruntime,gpu]" onnxruntime-web==1.17.0
 
-    # Convert and quantize the model (ensure your 'best_model' is ready)
-    python convert_to_onnx.py 
-    # (This script is an example; adapt if your conversion/quantization script is named differently or requires other steps)
-    ```
+    ```bash
 
 3. **run frontend:**
 ```bash
@@ -113,7 +109,12 @@ The model conversion process follows these steps:
 2. Apply dynamic INT8 quantization to reduce the model size
 3. Save the model and tokenizer files to the appropriate directories
 
-The conversion process is handled by the `export_and_quantize.py` scripts.
+The conversion process is handled by the `export_and_quantize.py` scripts. 
+```bash
+
+ python  export_and_quantize.py
+
+```bash
 
 ### Browser Integration
 
